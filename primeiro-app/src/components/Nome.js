@@ -1,6 +1,6 @@
-function Nome () {
+function Nome ({aluno,idade}) {
     return(
-        <div>Bem vindo: Rodrigo</div>
+        <div>Bem vindo: {aluno} - Idade: {idade}</div>
     );
 }
 

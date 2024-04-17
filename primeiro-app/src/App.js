@@ -5,7 +5,8 @@ function App() {
     <div>
       <h1>Bem vindo ao meu projeto</h1>
       <br/>
-      <Nome/>
+      <Nome aluno="Rodrigo" idade={26}/>
+      <Nome aluno="Dev" idade={30}/>
 
     </div>
   );
