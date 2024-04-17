@@ -1,8 +1,16 @@
-import { useState } from "react";
+import { useState,useEffect } from "react";
 
 function App() {
   const [input, setInput] = useState("");
   const [tarefas, setTarefas] = useState([]);
+
+  // Se deixar o array vazio toda vez que recarregar a pagina essa função será executada
+  // se passar um parametro dentro do Array [] toda vez que sofrer uma alteração a função é executada
+  useEffect(() =>{
+    localStorage.setItem('@tarefa', JSON.stringify(tarefas))
+  }, [tarefas])
+
+
   // e.preventDefault(); Serve para o navegador não ficar atualizando infinitamente
   // setTarefas([...tarefas,input]); os 3 pontos está incrementando o valor do Array tarefas + input digitado
   // setInput(''); está limpando campo input
