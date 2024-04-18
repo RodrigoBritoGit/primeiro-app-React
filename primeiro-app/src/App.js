@@ -1,9 +1,8 @@
-import { useState, useEffect } from "react";
-import './style.css';
+import RoutesApp from "./routes";
 
 function App() {
   return (
-    <div>Teste</div>
+    <RoutesApp/>
   );
 }
 
